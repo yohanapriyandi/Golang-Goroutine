@@ -22,7 +22,7 @@ func DisplayNumber(number int) {
 }
 
 func TestManyGoroutine(t *testing.T) {
-	for i := 0; i < 100000; i++ {
+	for i := 0; i < 1000000; i++ {
 		go DisplayNumber(i)
 	}
 
